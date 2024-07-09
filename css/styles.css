@@ -1,0 +1,127 @@
+/*
+COLOR PALETTE
+
+Dark green    #3c8453
+Sandy beige   #bcaa96
+Dark gray     #222222
+Light gray    #d3d4d6
+Off-white     #f6f6f6
+*/
+
+/*GLOBAL STYLES
+---------------------------------------------*/
+/* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background: #f6f6f6;
+  margin: 0;
+}
+
+/* links */
+a {
+  color: #bcaa96;
+}
+
+a:hover {
+  color: #3c8453;
+  text-decoration: none;
+}
+
+footer a {
+  color: #3c8453;
+}
+
+footer a:hover {
+  color: #bcaa96;
+  text-decoration: none;
+}
+
+.btn {
+  background: #3c8453;
+  color: #f6f6f6;
+  text-decoration: none;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 900px;
+}
+/*HOMEPAGE
+---------------------------------------------*/
+.homepage {
+  background: url(../images/bg-home-office-studio.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* ABOUT ME
+---------------------------------------------*/
+.homepage .content-wrapper {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/*RESUMEPAGE
+---------------------------------------------*/
+.resumepage header::before {
+  background: url(../images/bg-home-office-city.jpg);
+  background-position: center;
+  background-size: cover;
+  content: "";
+  display: block;
+  height: 375px;
+}
+
+.resume-section {
+  margin-bottom: 30px;
+}
+
+.resume-section h2 {
+  border-bottom: 3px solid #d3d4d6;
+}
+
+.project-item {
+  display: flow-root;
+  margin: 40px 0;
+}
+
+.project-item img {
+  float: left;
+  width: 300px;
+  margin-right: 30px;
+}
+
+.download-link {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+}
+
+/*FOOTER
+---------------------------------------------*/
+footer {
+  background: #222222;
+  color: #d3d4d6;
+}
+.socials {
+  list-style-type: none;
+  padding: 0;
+}
+.socials li {
+  display: inline-block;
+}
+.socials img {
+  width: 32px;
+}
